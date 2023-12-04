@@ -1,4 +1,4 @@
-## YOLOX：You Only Look Once目标检测模型在Pytorch当中的实现
+## 改bubblingYoloX模型＋CBAM在FPNPAN模块,mlgb越改越差
 ---
 
 ## 目录
