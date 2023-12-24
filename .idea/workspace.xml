@@ -35,7 +35,7 @@
     &quot;last_opened_file_path&quot;: &quot;D:/workspace/github/yolox/yolox-pytorch&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.voc_annotation">
     <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yolox-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,8 +80,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.train" />
         <item itemvalue="Python.voc_annotation" />
+        <item itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
