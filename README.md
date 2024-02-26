@@ -1,4 +1,6 @@
-## 改bubblingYoloX模型＋CBAM在FPNPAN模块,mlgb越改越差
+## 改bubblingYoloX模型＋CBAM在FPNPAN模块
+
+效果不好，推测原因：预训练权重是正对原始网络形状设计的，怎加attention后反而不适合此权重
 ---
 
 ## 目录
@@ -12,28 +14,6 @@
 8. [预测步骤 How2predict](#预测步骤)
 9. [评估步骤 How2eval](#评估步骤)
 10. [参考资料 Reference](#Reference)
-
-## Top News
-**`2022-04`**:**支持多GPU训练，新增各个种类目标数量计算，新增heatmap。**  
-
-**`2022-03`**:**进行了大幅度的更新，支持step、cos学习率下降法、支持adam、sgd优化器选择、支持学习率根据batch_size自适应调整、新增图片裁剪。**  
-BiliBili视频中的原仓库地址为：https://github.com/bubbliiiing/yolox-pytorch/tree/bilibili
-
-**`2021-10`**:**创建仓库，支持不同尺寸模型训练、支持大量可调整参数，支持fps、视频预测、批量预测等功能。**   
-
-## 相关仓库
-| 模型 | 路径 |
-| :----- | :----- |
-YoloV3 | https://github.com/bubbliiiing/yolo3-pytorch  
-Efficientnet-Yolo3 | https://github.com/bubbliiiing/efficientnet-yolo3-pytorch  
-YoloV4 | https://github.com/bubbliiiing/yolov4-pytorch
-YoloV4-tiny | https://github.com/bubbliiiing/yolov4-tiny-pytorch
-Mobilenet-Yolov4 | https://github.com/bubbliiiing/mobilenet-yolov4-pytorch
-YoloV5-V5.0 | https://github.com/bubbliiiing/yolov5-pytorch
-YoloV5-V6.1 | https://github.com/bubbliiiing/yolov5-v6.1-pytorch
-YoloX | https://github.com/bubbliiiing/yolox-pytorch
-YoloV7 | https://github.com/bubbliiiing/yolov7-pytorch
-YoloV7-tiny | https://github.com/bubbliiiing/yolov7-tiny-pytorch
 
 ## 性能情况
 | 训练数据集 | 权值文件名称 | 测试数据集 | 输入图片大小 | mAP 0.5:0.95 | mAP 0.5 |
